@@ -59,20 +59,22 @@ body {
     padding: 0;
 }
 
+.slider {
+	width: 100%;
+	height: auto;
+}
+
+
 .slider1 img {
     width: 100%;
     height: auto;
 }
 
-.interes, .tips {
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 1200px;
-}
 
 .categorias, .tips-categorias {
     display: grid;
-    grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+    grid-template-columns:1fr 1fr 1fr;
     gap: 20px;
     padding: 20px 0;
     text-align: center;
@@ -87,7 +89,7 @@ body {
 .productos {
     margin: 0 auto;
     padding: 20px;
-    max-width: 1200px;
+    max-width: 100%;
     text-align: center;
 }
 
@@ -95,7 +97,8 @@ body {
     list-style-type: none;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
 
@@ -103,27 +106,6 @@ body {
     max-width: 100%;
     height: auto;
 }
-
-
-
-table {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 10px;
-    border-collapse: collapse;
-    width: 70%; /* Ajusta el ancho de la tabla según sea necesario */
-
-
-}
-
-table, th, td {
-    
-    padding: 10px;
-    text-align: center;
-}
-
-
 
 button {
 	color: #ffffff;
@@ -173,38 +155,44 @@ footer li a{
 	padding: 10px;
 }
 
-@media screen and(max-width: 320px) {
-    .categorias {
-        grid-template-columns: repeat(1, 1fr); /* 2 columnas en pantallas medianas */
+@media screen and (max-width: 320px) {
+	.categorias .tips-categorias {
+		grid-template-rows: 1fr;
+    	grid-template-columns: 1fr
+	}
+}
+
+@media screen and (max-width: 480px) {
+    .categorias .tips-categorias {
+		grid-template-rows: 1fr;
+    	grid-template-columns: 1fr;
     }
 }
 
-@media screen and(max-width: 480px) {
-    .categorias {
-        grid-template-columns: repeat(1, 1fr); /* 2 columnas en pantallas medianas */
+@media screen and (max-width: 600px) {
+	.categorias .tips-categorias {
+		grid-template-rows: 1fr;
+    	grid-template-columns: 1fr;
     }
 }
 
-@media screen and(max-width: 600px) {
-    .categorias {
-        grid-template-columns: repeat(1, 1fr); /* 2 columnas en pantallas medianas */
-    }
-}
-
-@media screen and(max-width: 768px) {
-    .categorias {
-        grid-template-columns: repeat(3, 1fr); /* 2 columnas en pantallas medianas */
+@media screen and (max-width: 768px) {
+    .categorias .categoria,
+    .tips-categorias .categoria {
+        width:100%;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .categorias {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas grandes */
+	.categorias .tips-categorias {
+		grid-template-rows: 1fr;
+    	grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .categorias {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas grandes */
+    .categorias .tips-categorias {
+		grid-template-rows: 1fr;
+    	grid-template-columns: 1fr 1fr 1fr;
     }
 }

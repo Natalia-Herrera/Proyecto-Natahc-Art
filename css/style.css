@@ -4,13 +4,13 @@
 }
 
 @font-face{
-	font-family: "Poppins-Regular";
-	src: url(../font/Poppins-Regular.ttf);
+	font-family: "Poppins-Medium";
+	src: url(../font/Poppins-Medium.ttf);
 }
 
 Body{
 	background-color: #e9fff8;
-	font-family: "Poppins-Regular";
+	font-family: "Poppins-Medium";
 }
 
 Header{
@@ -59,15 +59,21 @@ body {
     padding: 0;
 }
 
+main { 
+	margin-top: 20px;
+}
+
 .slider {
 	width: 100%;
 	height: auto;
+	text-align: center;
 }
 
 
 .slider1 img {
-    width: 100%;
+    width: 70%;
     height: auto;
+	border-radius: 40px;
 }
 
 
@@ -83,7 +89,10 @@ body {
 .categoria img {
     max-width: 100%;
     height: auto;
+	border-radius: 20px;
 }
+
+
 
 /* Productos */
 .productos {
@@ -123,8 +132,14 @@ button:hover {
 	color: #6c29c7;
 }
 
-p{
-	text-align: center;
+p {
+text-align: center;
+}
+.texto-tips .texto-categorias {
+	margin: 0 auto;
+    padding: 20px;
+    max-width: 100%;
+    text-align: center;
 }
 
 .footer {

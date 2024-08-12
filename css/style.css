@@ -92,7 +92,40 @@ main {
 	border-radius: 20px;
 }
 
+.galleria {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .galleria .col-6 {
+	margin-bottom: 10px;
+  }
 
+  .galleria img {
+	border-radius: 20px;
+  }
+
+  .formulario {
+	padding: 20px;
+  }
+  
+  .contenido {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+  }
+  
+  .texto-section, .formulario-section {
+	flex: 1 1 100%;
+  }
+  
+  .formulario-section form div {
+	margin-bottom: 15px;
+  }
+  
+  .formulario-section input[type="text"], .formulario-section input[type="submit"], .formulario-section input[type="reset"] {
+	width: 100%;
+  }
 
 /* Productos */
 .productos {
@@ -204,27 +237,43 @@ text-align: center;
 		grid-template-rows: 1fr;
     	grid-template-columns: 1fr
 	}
+
+	.galleria .col-6 {
+		flex: 0 0 50%;
+	  }
 }
 
-@media screen and (max-width: 480px) {
+@media (min-width: 321px) and (max-width: 480px) {
     .categorias .tips-categorias {
 		grid-template-rows: 1fr;
     	grid-template-columns: 1fr;
     }
+
+	.galleria .col-sm-4 {
+		flex: 0 0 50%;
+	  }
 }
 
-@media screen and (max-width: 600px) {
+@media (min-width: 481px) and (max-width: 600px) {
 	.categorias .tips-categorias {
 		grid-template-rows: 1fr;
     	grid-template-columns: 1fr;
     }
+
+	.galleria .col-sm-4 {
+		flex: 0 0 33.33%;
+	  }
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 601px) and (max-width: 768px) {
     .categorias .categoria,
     .tips-categorias .categoria {
         width:100%;
     }
+
+	.galleria .col-sm-4 {
+		flex: 0 0 33.33%;
+	  }
 
 	.footer-content {
 		flex-direction: column;
@@ -237,16 +286,33 @@ text-align: center;
 	  }
 }
 
-@media screen and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
 	.categorias .tips-categorias {
 		grid-template-rows: 1fr;
     	grid-template-columns: 1fr 1fr 1fr;
     }
+
+	.galleria .col-lg-2 {
+		flex: 0 0 25%;
+	  }
+
+	  .texto-section {
+		flex: 1 1 60%;
+	  }
+	
+	  .formulario-section {
+		flex: 1 1 40%;
+	  }
+
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1025px) {
     .categorias .tips-categorias {
 		grid-template-rows: 1fr;
     	grid-template-columns: 1fr 1fr 1fr;
     }
+
+	.galleria .col-lg-2 {
+		flex: 0 0 16.66%;
+	  }
 }

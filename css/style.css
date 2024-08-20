@@ -60,7 +60,7 @@ body {
 }
 
 main { 
-	margin-top: 20px;
+	margin: 40px;
 }
 
 .slider {
@@ -82,12 +82,13 @@ main {
 	grid-template-rows: 1fr;
     grid-template-columns:1fr 1fr 1fr;
     gap: 20px;
-    padding: 20px 0;
+    padding: 20px 20px;
     text-align: center;
+
 }
 
 .categoria img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 	border-radius: 20px;
 }
@@ -130,7 +131,6 @@ main {
 /* Productos */
 .productos {
     margin: 0 auto;
-    padding: 20px;
     max-width: 100%;
     text-align: center;
 }
@@ -141,7 +141,6 @@ main {
     display: grid;
 	grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
 }
 
 .producto img {
@@ -165,14 +164,35 @@ button:hover {
 	color: #6c29c7;
 }
 
-p {
-text-align: center;
+.parrafo {
+	text-align: center;
+	padding: 20px;
 }
 .texto-tips .texto-categorias {
 	margin: 0 auto;
     padding: 20px;
     max-width: 100%;
     text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.video-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+	text-align: center;
+}
+
+.text-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+	text-align: center;
 }
 
 .footer {
@@ -284,6 +304,18 @@ text-align: center;
 		margin-bottom: 20px;
 		text-align: center;
 	  }
+
+	  .video-container {
+        flex: 1 1 50%;
+        max-width: 50%;
+    }
+
+    .text-container {
+        flex: 1 1 50%;
+        max-width: 50%;
+    }
+
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

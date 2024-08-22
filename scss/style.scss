@@ -1,0 +1,18 @@
+@import "var";
+@import "_resetbody";
+@import "header";
+@import "main1";
+@import "footer";
+
+.main-portafolio {
+    margin: 40px;
+    .slider {
+        width: 100%;
+	    height: auto;
+	    text-align: center;
+        .slider2 img {
+            width: 70%;
+            height: auto;
+            border-radius: 40px;
+        }
+}

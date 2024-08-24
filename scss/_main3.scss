@@ -1,0 +1,111 @@
+.main3 {
+    margin: 40px;
+    .slider3 {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      .slider3ro img {
+        width: 70%;
+        height: auto;
+        border-radius: 40px;
+      }
+      }
+  
+    h2 {
+          color: $color-principal;
+          padding: 10px;
+          text-align: center;  
+  }
+  
+    .container {
+      .row {
+        .galleria {
+          display: flex;
+          flex-wrap: wrap;
+  
+          .col-6,
+          .col-sm-4,
+          .col-md-4,
+          .col-lg-2 {
+            margin-bottom: 10px;
+  
+            img {
+              &.img-fluid {
+                max-width: 100%;
+                height: auto;
+                border-radius: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .formulario {
+        .contenido {
+          .texto-section {
+            h2 {
+                color: $color-principal;
+                padding: 10px;
+                text-align: center;  
+            }
+      
+            p {
+                text-align: center;
+                padding: 20px;
+            }
+          }
+      
+          .formulario-section {
+            h3 {
+                color: $color-principal;
+                padding: 10px;
+                text-align: center;  
+            }
+      
+            form {
+              div {
+                margin-bottom: 15px; // Puedes ajustar el margen si es necesario
+      
+                label {
+                  display: block;
+                  margin-bottom: 5px; // Espacio entre el label y el input
+                }
+      
+                input[type="text"],
+                input[type="checkbox"] {
+                  // Estilos para los inputs de texto y checkbox
+                  width: 100%; // Puedes ajustar el tamaño
+                  padding: 10px;
+                  margin-bottom: 10px;
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                }
+      
+                input[type="checkbox"] {
+                  width: auto; // Para ajustar el tamaño del checkbox
+                }
+      
+                input[type="submit"],
+                input[type="reset"] {
+                  // Estilos para los botones de enviar y borrar
+                  padding: 10px 20px;
+                  margin-right: 10px;
+                  background-color: $color-principal;
+                  border: none;
+                  border-radius: 5px;
+                  color: $bg-blanco;
+                  cursor: pointer;
+      
+                  &:hover {
+                    background-color: $color-hover; // Cambia el color al hacer hover
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+  
+   
+  }

@@ -1,0 +1,74 @@
+.main2 {
+    margin: 40px;
+    .slider2 {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      .slider2do img {
+        width: 70%;
+        height: auto;
+        border-radius: 40px;
+      }
+      }
+  
+    h2 {
+          color: $color-principal;
+          padding: 10px;
+          text-align: center;  
+  }
+  
+    .container {
+      .row {
+        .galleria {
+          display: flex;
+          flex-wrap: wrap;
+  
+          .col-6,
+          .col-sm-4,
+          .col-md-4,
+          .col-lg-2 {
+            margin-bottom: 10px;
+  
+            img {
+              &.img-fluid {
+                max-width: 100%;
+                height: auto;
+                border-radius: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .content-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 20px; // Ajusta el margen según tus necesidades
+  
+      .video-container {
+        flex: 1 1 100%;
+        max-width: 100%;
+        text-align: center;
+  
+        iframe {
+          width: 400px;
+          height: 225px;
+          border: none;
+        }
+      }
+  
+      .text-container {
+        flex: 1 1 100%;
+        max-width: 100%;
+        text-align: center;
+  
+        p {
+          margin-left: 20px; // Ajusta el margen según el diseño que prefieras
+        }
+      }
+    }
+  }

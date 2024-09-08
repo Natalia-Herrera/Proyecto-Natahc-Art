@@ -10,6 +10,15 @@
         border-radius: 40px;
       }
       }
+
+      .texto-bienvenida {
+        display: flex;
+        justify-content: center;
+        .parrafo1 {
+          text-align: center;
+          max-width: 80%; // O cualquier ancho deseado
+        }
+      }
   
     h2 {
           color: $color-principal;
@@ -58,16 +67,6 @@
           width: 400px;
           height: 225px;
           border: none;
-        }
-      }
-  
-      .text-container {
-        flex: 1 1 100%;
-        max-width: 100%;
-        text-align: center;
-  
-        p {
-          margin-left: 20px; // Ajusta el margen según el diseño que prefieras
         }
       }
     }
